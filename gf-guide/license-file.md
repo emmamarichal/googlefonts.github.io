@@ -40,7 +40,7 @@ This page flags some important requirements about the <mark class="grey">OFL</ma
 
 -   **There is no Reserved Font Name (RFN) mention.**
 
-    The RFN is an optional element of the Open Font License that forbids a user to fork and modify an open-source font under the *same name*. Only the original version of the font can bear this name. This apply to the design as well as the metadata or the glyphset.
+    The RFN is an optional element of the Open Font License that forbids a user to fork and modify an open-source font under the *same name*. Only the original version of the font can bear this name. This apply to the design as well as the metadata or the glyph set.
 
     Since GF distributes a *subsetted* version of the font through the API, the font is not legally considered the same as the original one. Therefore GF wouldn’t be able to publish the font without renaming it. Certainly as a designer you would rather see GF use your preferred font name, rather than be forced to name it something else for the exact same design.
 
@@ -54,7 +54,7 @@ This page flags some important requirements about the <mark class="grey">OFL</ma
 
 If updated, the RFN should be updated everywhere (source files, OFL.txt, and anywhere else)
     
-    -   In other cases, a legal agreement needs to be made between Google and the copyright holders. This is the case for all Adobe and SIL fonts, for example. In that case you should get in contact with your Google Fonts point of contact to start the legal process of allowing GF to use the font name despite the RFN. This is usually done by a simple email from an authorized representative of the RFN holder:
+    -   In other cases, a legal agreement needs to be made between Google Fonts and the copyright holders. This is the case for all Adobe’s and SIL’s fonts for example. In that case you should get in contact with your Google Fonts point of contact to start the legal process of allowing GF to use the font name despite the RFN. This is usually done by email from an authorized representative of the RFN holder:
 
 ``` code
 To: fonts@google.com
@@ -74,7 +74,7 @@ Firstname Last-name
 Company Name 
 ```
 
-Once the authorisation has been given, the font names should be added to [Fontbakery's exception list](https://github.com/googlefonts/fontbakery/blob/main/Lib/fontbakery/data/googlefonts/reserved_font_name_exceptions.txt) to avoid to fail the font.
+Once the authorization has been given, the font names should be added to [Fontbakery's exception list](https://github.com/googlefonts/fontbakery/blob/main/Lib/fontbakery/data/googlefonts/reserved_font_name_exceptions.txt) to avoid to fail the font.
 
 -   **All info between the font, the source, and the license should match.**
 -   **The OFL.txt file must use the same template as the rest of the Google Fonts Library.**
