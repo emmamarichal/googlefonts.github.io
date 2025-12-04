@@ -14,11 +14,8 @@ A new step has therefore been added to the font onboarding process, managed by t
 </div>
 
 <div class="context-reading">
-Background reading:<br />
-<ul>
-    <li><mark class="blue">start→</mark> [Libre Fonts Culture](./culture)</li>
-    <li><mark class="blue">nerd→</mark> [Project Prioritization](./prioritization)</li>
-</ul>
+    Background reading:<br>
+    <mark class="purple">nerd&nbsp;</mark> <a href="./making-pr">Making a PR to Google Fonts</a>
 </div>
 
 ## Table of contents

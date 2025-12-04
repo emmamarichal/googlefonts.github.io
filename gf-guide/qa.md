@@ -38,7 +38,7 @@ For the rest of this chapter, it would be better if you have basic knowledge of:
 
 ## Tools 
 
-### Checking the font tabes
+### Checking the font tables
 
 Beyond the visible outlines of a typeface, each font binary is composed of an ensemble of [required tables](https://learn.microsoft.com/en-us/typography/opentype/spec/otff#font-tables). These tables store fundamental metadata for the font to transmit operating information to the different environments (OS, applications, browsers) and, therefore, for it to function properly in all of them.
 
@@ -48,9 +48,9 @@ Hence, it is important to inspect them to verify all the information is as expec
 -   [Font table viewer](https://glyphsapp.com/tools/fonttableviewer) to turn the UFOs into FontTools objects;
 -   [DTL OT Master](https://www.fontmaster.nl/otmaster.html) to also edit them.
 
-### Checking with Fontbakery
+### Checking with Fontspector
 
-Fontbakery is our primary quality assurance testing tool to make it easier to check that font projects are optimal, making sure that the fonts **are reliable** before they are submitted to the users.
+Fontbakery was previously our primary quality assurance testing tool. We now use Fontspector, a Rust-based tool, which makes it easier to ensure that font projects are optimal and that the fonts are reliable before being delivered to users.
 
 #### Log levels results
 
