@@ -7,9 +7,10 @@
 
 <div class="callout">
 
-🐰 Google Fonts used to accept open-source licenses such as <mark class="grey">OFL</mark>, <mark class="grey">UFL</mark> and <mark class="grey">APACHE2</mark>. It has been a few years now that only OFL licenses are accepted.
+🐰 Google initially accepted several libre licenses such as <mark class="grey">OFL</mark>, <mark class="grey">UFL</mark> and <mark class="grey">Apache</mark>.
+But today only the OFL is accepted, and that has been the case for many years now.
 <br><br>
-This page will give users some important requirements about the <mark class="grey">OFL</mark> license, as well as a template to copy-paste into their repo.
+This page flags some important requirements about the <mark class="grey">OFL</mark> license, as well as a template to copy-paste into your repo.
 
 </div>
 
@@ -45,7 +46,13 @@ This page will give users some important requirements about the <mark class="gre
 
     Sometimes an RFN is necessary:
 
-    -   Typically when the original RFN is respected; the font is itself based on a previous open source font, which had an RFN, and had to be renamed to start with—even though its new name is not under RFN license terms. In that case, the OFL text should mention the original RFN. See the [Lexend](https://github.com/googlefonts/lexend/blob/main/OFL.txt) project as an example.
+    -   Typically when the original RFN is respected; the font is itself based on a previous libre font, which had an RFN, and had to be renamed to start with—even though its new name is not under RFN license terms. In that case, the OFL text should mention the original RFN. See the [Lexend](https://github.com/googlefonts/lexend/blob/main/OFL.txt) project as an example.
+ 
+    -   The RFN should be included in the first line of the file, although if it is the second line that is acceptable.
+ 
+    -   An RFN should only state the unique parts of the **family** name only, since reserving (prohibiting) "Sans" or "Mono" or such generic parts from any derivative project is overreaching.
+
+If updated, the RFN should be updated everywhere (source files, OFL.txt, and anywhere else)
     
     -   In other cases, a legal agreement needs to be made between Google Fonts and the copyright holders. This is the case for all Adobe’s and SIL’s fonts for example. In that case you should get in contact with your Google Fonts point of contact to start the legal process of allowing GF to use the font name despite the RFN. This is usually done by email from an authorized representative of the RFN holder:
 
@@ -59,8 +66,8 @@ I hereby grant permission in perpetuity to Google LLC and affiliates to use the 
 trademarks and Reserved Font Names declared in my SIL Open Font Licence notices 
 for fonts served via Google Fonts:
 
-- Font Name 1
-- Font Name 2
+- Unique part of family names
+- Unique part of family names
 
 Best Regards,
 Firstname Last-name

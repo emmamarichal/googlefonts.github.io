@@ -8,7 +8,7 @@
 <div class="callout">
 
 🐸  Any contributions to Google Fonts should be first submitted through the <a href="https://github.com/google/fonts/issues">Google Fonts issue tracker</a>.
-<br><br>
+
 Don't forget to search the issue tracker (using keywords) to see if your issue has already been raised before opening a new one. The following links can be used to create different kinds of issues:
 
 <ul>
@@ -19,16 +19,16 @@ Don't forget to search the issue tracker (using keywords) to see if your issue h
 </ul>
 
 From time to time, Google Fonts provides financial and design assistance for projects.
-If you would like to discuss this, please mention that you would like someone to contact you privately when filing an issue (and have contact details on your GitHub profile page.)
+If you would like to discuss this, please mention that you would like someone to contact you privately when filing an issue (and have contact details on your Github profile page).
 
 </div>
 
 <div class="context-reading">
-
-Background reading:  
-<mark class="blue">start→</mark> **[Libre Fonts Culture](./culture)**  
-<mark class="blue">nerd→</mark> **[Project Prioritization](./prioritization)**
-
+Background reading:<br />
+<ul>
+    <li><mark class="blue">start→</mark> [Libre Fonts Culture](./culture)</li>
+    <li><mark class="blue">nerd→</mark> [Project Prioritization](./prioritization)</li>
+</ul>
 </div>
 
 ## Table of contents
@@ -54,8 +54,10 @@ If you would like to include a new font family in the Google Fonts collection, w
 - **The Open Font License should not have any Reserved Font Names ([why](https://github.com/simoncozens/silson/issues/1)).**
   
 - **The copyright holders must all have filled in the** **[Google Contributor's License Agreement](https://cla.developers.google.com/)** **forms.**
+
+- **The font family name should not include any sensitive, sexual, stereotype, annoying or otherwise objectional words.**
  
-- **The font family name should not include any copyright holder's full names.**
+- **The font family name should not include any copyright holder's full names or acronyms.**
 
     - First names are accepted, though. No registered trademarks, no initials or abbreviations, no references to languages or writing systems, and no cultural reference that may be offensive in any way. Use only ASCII alphanumeric characters in the family name and begin with an alphabet character, no dashes nor diacritics. Aim for a simple and unique name, ideally short and easy to remember. Long names can be harder for people to remember and type correctly and problematic for software with name length limitations.
     
@@ -64,6 +66,8 @@ If you would like to include a new font family in the Google Fonts collection, w
     - If you are making a libre version of your prior proprietary font or designing something in an established genre, add "Libre" or a local equivalent to that well-known name e.g. *Vesper Libre* or *Libre Baskerville.*
     
     - A limited but easy way to test for uniqueness is [namecheck.fontdata.com](https://namecheck.fontdata.com/) along with a general web search for *name* + font.
+
+    - The name of the font family expected to appear on app menus must be very clearly communicated, because in the past there have been unfortunate miscommunications about this due to imprecise naming, even in Reserved Font Name agreements.
     
     - Refer to the dedicated chapter to know more about [Authors and Contributors](authors.md).
     
