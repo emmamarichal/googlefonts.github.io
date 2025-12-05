@@ -46,7 +46,7 @@ If you would like to include a new font family in the Google Fonts collection, w
     
 - **The project must be wholly licensed under the** **[SIL Open Font License v1.1](http://scripts.sil.org/OFL).**
     <br>
-    There must also be no proprietary/restricted-license versions of the project available elsewhere (such as additional weights/styles). Agreeing to publishing a font on Google Fonts means that you agree to licensing under the OFL all the existing styles of a same family, and the ones to come. For example, Mono, Proportional, Display, Text, Serif, Sans-Serif… are considered styles (or subfamilies) of the same font family, and should therefore be open source as well.
+    There must also be no proprietary/restricted-license versions of the project available elsewhere (such as additional weights/styles). Agreeing to publish a font on Google Fonts means that you agree to license under the OFL all existing styles of the same family, and future ones. For example, Mono, Proportional, Display, Text, Serif, Sans-Serif… are considered styles (or subfamilies) of the same font family, and should therefore be open source as well.
     <br>
     <br>
     Refer to the dedicated chapter to know more about the [license file requirements](license-file.md).
@@ -55,7 +55,7 @@ If you would like to include a new font family in the Google Fonts collection, w
   
 - **The copyright holders must all have filled in the** **[Google Contributor's License Agreement](https://cla.developers.google.com/)** **forms.**
 
-- **The font family name should not include any sensitive, sexual, stereotype, annoying or otherwise objectional words.**
+- **The font family name should not include any sensitive, sexual, stereotypical, annoying or otherwise objectionable words.**
  
 - **The font family name should not include any copyright holder's full names or acronyms.**
 
@@ -73,7 +73,7 @@ If you would like to include a new font family in the Google Fonts collection, w
     
 -   **The project must be developed on GitHub or similar platform.**
     <br>
-    A VCS open to public participation and actively maintained. Please read our [Github guide](hosting.md).
+    A VCS that is open to public participation and actively maintained. Please read our [Github guide](hosting.md).
     
 -   **The source files are available** in your preferred font editor format.
     <br>
@@ -149,15 +149,20 @@ You can request the addition or modification of your name, bio, and image using 
 
 You can find more about the technical aspect of adding a profile to google/fonts repo by reading the [Designer Profile chapter](profile.md). -->
 
-
 <div class="next-reading">
-    
-Further reading:  
-<mark class="green">**must→**</mark> **[Overall font requirements](./requirements)**  
-<mark class="green">**must→**</mark> **[Static fonts specifics](./static)**  
-<mark class="green">**must→**</mark> **[Variable fonts specifics](./variable)**  
-<mark class="green">**must→**</mark> **[Vertical metrics](./metrics)**  
-<mark class="green">**must→**</mark> **[Production requirements](./production)**  
-<mark class="blue">nerd→</mark> [Project Prioritization](./prioritization)
-
+    Further reading:<br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./requirements">Overall font requirements</a>
+    <br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./testing">QA - Local testing</a>
+    <br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./static">Static fonts specifics</a>
+    <br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./variable">Variable fonts specifics</a>
+    <br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./metrics">Vertical metrics</a>
+    <br>
+    <mark class="green"><b>must&rarr;</b></mark> <a href="./production">Production requirement</a>
+    <br>
+    <mark class="blue"><b>must&rarr;</b></mark> <a href="./prioritization">Project Prioritization</a>
 </div>
+
