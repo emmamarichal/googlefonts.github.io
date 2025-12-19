@@ -57,7 +57,7 @@ Fontbakery was previously our primary quality assurance testing tool. We now use
 The check results are categorised according to levels of relevance, ranging from ERROR to SKIP. The icons are helpers to identify the severity. Be calm! There could be many of them. Get comfortable with receiving them and embrace them as a way to improve your font.
 
 - 💔 **ERROR** Is a problem with the program itself, not the fonts. For example a bug or a check that requires an internet connection. 
-If you get an Error, please give it a quick look to see which case it is. If it’s not an internet connection issue, please help us to improve the tool by reporting it in the [issue tracker of the Fontbakery repository](github.com/googlefonts/fontbakery/issues).
+If you get an Error, please give it a quick look to see which case it is. If it’s not an internet connection issue, please help us to improve the tool by reporting it in the [issue tracker of the Fontspector repository](https://github.com/fonttools/fontspector/issues).
 
 - 🔥 **FAIL** Is a problem with the font that **must be fixed**. 
 
@@ -88,18 +88,15 @@ Main profiles are:
 
     The command to run this profiles is:
 
-    `fontbakery check-googlefonts path/fonts/Family-*.ttf` 
+    `fontspector -p googlefonts path/fonts/Family-*.ttf` 
 
     There is also an option to filter the check result by log-level. For a font to be published in GF it should be at least from Warn level. There is also an option to generate a output file of the report in Markdown format:
     
-    `fontbakery check-googlefonts -l WARN --ghmarkdown report.md`
+    `fontspector -p googlefonts -l warn --ghmarkdown report.md path/fonts/Family-*.ttf`
 
   To see all the commands available in a profile run:
   
-   `fontbakery [profile] --help` 
-
-Some foundries created their own profile to have vendor-specific checks. This is the case of Fontwerk and Font Bureau, and you could do it too with a little bit of Python skill!
-
+   `fontspector -p [profile] -L` 
 
 
 ### Proofing with Diffenator2
@@ -113,14 +110,14 @@ To see the available options run one of the following commands:
 You can also check for install instructions and more options in its [GitHub repository](https://github.com/googlefonts/diffenator2).
 
 
-<!-- #### gftools qa
+### Using Gftools QA
 
-`gftools qa` wraps `gftools gen-html` and `fontbakery`.
+`gftools qa` wraps `gftools gen-html`, `diffenator3` and `fontspector`. It also generates a .pdf that report interpolation issues.
 
-`gftools qa -f *.ttf -a -o ~/Desktop/font_QA`
+From your fonts directory, you can run:
+`gftools qa -f *.ttf -a --rust`
 add `-gfb` if you want to have a diff with previous published version on Google Fonts. 
 
-Add note that images are only available to team members. -->
 
 ## Outlines and type design
 
@@ -142,6 +139,7 @@ However, you could:
 
 <div id="col1">
     <ul>
+		<li><a href="https://github.com/fonttools/fontspector/blob/main/USING.md" target="_blanck">Fontspector's documentation</a></li>    
       <li><a href="https://font-bakery.readthedocs.io/en/stable/" target="_blanck">Fontbakery's documentation</a></li>
       <li><a hfer="https://github.com/microsoft/Font-Validator" target="_blank">Microsoft's font validator</a> is the official font checking tools for Microsoft environment.</li>
     </ul>
