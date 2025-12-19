@@ -623,8 +623,40 @@ Two tools are needed to prepare these lists.
 
 The manage Traffic Jam is used to organise the Traffic Jam board, ie. update the PR status. 
 Everything that the tool does, you can do it manually from the Traffic Jam board —but it take ages.
+To use this tool, run the following command from the fonts directory of the Google Fonts repository:
 
-To use it, 
+`gftools manage-traffic-jam .`
+
+
+The tool will then go through each pull request listed on the Traffic Jam Board and provide information about their current status. It also indicates when the most recent pushes were made.
+
+<br>
+
+<figure>
+<img src="./images/onboarder-workflow/traffic-jam-tool1.png" style="width:2568px" alt="" />
+<figcaption aria-hidden="true">Traffic Jam Tool, showing servers status</figcaption>
+</figure>
+<br>
+
+For each pull request, you have several possible actions:
+
+- Block the PR if you identify an issue
+- Skip it if there is no problem
+- Inspect it for further review
+
+<br>
+
+<figure>
+<img src="./images/onboarder-workflow/traffic-jam-tool2.png" style="width:2568px" alt="" />
+<figcaption aria-hidden="true">Traffic Jam Tool, action you can choose</figcaption>
+</figure>
+<br>
+
+Once you have skipped or blocked the relevant PRs, the statuses on the board will be updated, and you can proceed to the next step and generate the lists.
+
+Please note that some pull requests are not handled by the tool (for example, designer profile PRs or language PRs). These must be checked manually, and their status updated by hand.
+
+Before generating the lists, make sure there are no duplicates, and review the status of PRs that have been blocked for several weeks: the issue may have been resolved in the meantime.
 
 #### `gftools gen-push-lists` script
 
@@ -637,7 +669,7 @@ The script reads the Traffic Jam board to collect information:
 - We push font directories and textproto files.
 - If the script detect deleted path, it will mute these lines and they can then be copy-pasted into the `to_delist.txt` file.
 
-Once the list are created, it should be pushed to [google/fonts](https://github.com/google) thanks to a PR on another branch with a label <mark class=grey>Tool / Workflow / Repo</mark>. Chris should be assigned to review the PR and he will merge it. 
+Once the list are created, it should be pushed to [google/fonts](https://github.com/google) thanks to a PR on another branch with a label <mark class=grey>Tool / Workflow / Repo</mark>. 
 
 Once the PR updating the list is merged, the on-call team should be notified by message in the group chat. 
 
@@ -648,11 +680,10 @@ For example pushing a change to a article, description, metadata or license file
 - A change to a font file is blocked in sandbox waiting to be fixed before going further. Pushing further the PR that changes a non-font file would also push the blocked change of the font file.
 - The font directory was added retrospectively. This is the case for the old families before the existence of the google/fonts repository. It often happens that the `METADATA.pb` from these families were manually made and are containing errors such as an inconsistent family name with the font name key in `METADATA.pb` (eg. an inconsistency such as `FontName` and `Font Name` would result in pushing a new family into the API). So even when only modifying a non-font file, the Fontspector report should be read carefully.
 
-### Checking the dev/sandbox/prod
+### Checking the sandbox/prod
 
 It is needed to check each pushed family to make sure that indeed the change was pushed, that it is displayed correctly, and to double-check check previous QA before sending to prod. Most problems could be avoided with a thorough QA before merging, but errors can always happen and the API has the advantage to reflect data errors visually.
 
-- We usually check the dev-sandbox if we are in an experimenting phase with a special font family. 
 - We must check the sandbox after each push to sandbox and before preparing the to production list.
 - The live server can be checked very briefly after a prod push. It is a good opportunity to select the new fonts and the important upgrades to create a "share" link with the stakeholders and the user community on tweeter.
 
