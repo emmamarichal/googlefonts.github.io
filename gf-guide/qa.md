@@ -44,7 +44,7 @@ Beyond the visible outlines of a typeface, each font binary is composed of an en
 
 Hence, it is important to inspect them to verify all the information is as expected. You can make use of the following tools:
 
--   [TTX](https://fonttools.readthedocs.io/en/latest/ttx.html) open xml file, a human readable version of the font tables;
+-   [TTX](https://fonttools.readthedocs.io/en/latest/ttx.html) open XML file, a human-readable version of the font tables;
 -   [Font table viewer](https://glyphsapp.com/tools/fonttableviewer) to turn the UFOs into FontTools objects;
 -   [DTL OT Master](https://www.fontmaster.nl/otmaster.html) to also edit them.
 
@@ -101,7 +101,7 @@ Main profiles are:
 
 ### Proofing with Diffenator2
 
-Diffenator2 is a tool allows you to generate html with real words to proof the font functioning, and also to compare two different versions of a font.
+Diffenator2 is a tool allows you to generate HTML with real words to proof the font functioning, and also to compare two different versions of a font.
 
 To see the available options run one of the following commands:
 
