@@ -6,7 +6,7 @@
 
 🦜 This guide aims to help people navigate the requirements and recommendations for contributing to <a href="https://fonts.google.com">Google Fonts</a>. The contents covered here range from general knowledge to contextualize the <i>what</i> and <i>why</i> of some of the requirements as well as the specifics regarding technical aspects with some suggestions on how to comply with them. It covers different levels of information for both newcomers and more experienced contributors.
 
-Therefore, <b>this documentation is not meant to be read at once</b>. If you are already familiar with some of the concepts, for example, some people are more empowered with the use of GitHub please you can skip some chapters and jump to the other bits that you may be looking for. The guidelines have been separated into small bits to facilitate the search of specific information that you would need at a specific stage of the font production.
+Therefore, <b>this documentation is not meant to be read at once</b>. If you are already familiar with some of the concepts, for example, some people are more empowered with the use of GitHub please skip some chapters and jump to the other bits that you may be looking for. The guidelines have been separated into small bits to facilitate the search of specific information that you would need at a specific stage of the font production.
 
 <ul>
   <li>If you are a <b>newcomer</b> and you want to <b>contribute</b> fonts to Google Fonts, whether commissioned or as a voluntary contribution, you should read the chapters marked with 
@@ -100,7 +100,7 @@ Context, requirements, and tools to produce the fonts and get them ready for pub
 
 ## The google/fonts repository 
 
-Details on the Google Fonts repository that hosts the fonts projects already included in the Catalog.
+Details on the Google Fonts repository that hosts the fonts projects already included in the catalog.
 
 * <mark class="purple">nerd&nbsp;</mark>
   [google/fonts repository explained](googlefonts.md)

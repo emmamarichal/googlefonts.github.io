@@ -252,13 +252,13 @@ Vertical metrics for CJK fonts are based on the font em-box values. This ensures
 
 The following metrics are a distinct split from the standard approach of setting vertical metrics for CJK fonts, which normally set the `sTypo` metrics to align with the em-box values. This is also how the [OT spec recommendations](https://learn.microsoft.com/en-us/typography/opentype/spec/os2#stypoascender) are written. However, following [investigation into performance of CJK fonts](https://github.com/google/fonts/issues/8911) under the primary scenarios that Google Fonts prioritizes, the following new metrics have been established:
 
-| Attribute                                 | Value                                    | Example using 1000UPM font |
+| Attrib                                    | Value                                    | Example using a 1000 UPM font such as [Iansui](https://github.com/ButTaiwan/iansui)       |
 |-------------------------------------------|------------------------------------------|----------------------------|
-| OS/2.sTypoAscender                        | 0.88 \* font UPM                         | 880                        |
-| OS/2.sTypoDescender                       | -0.12 \* font UPM                        | -120                       |
+| OS/2.sTypoAscender                        | ideoEmBoxTop \+ (10–20% \* em-box)/2      | 940                        |
+| OS/2.sTypoDescender                       | ideoEmBoxBottom \- (10–20% \* em-box)/2   | -180                       |
 | OS/2.sTypoLineGap                         | 0                                        | 0                          |
-| hhea.ascender                             | Set to look comfortable (\~1.16 \* UPM)  | 1160                       |
-| hhea.descender                            | Set to look comfortable (\~0.288 \* UPM) | -288                       |
+| hhea.ascender                             | OS/2.sTypoAscender                       | 940                        |
+| hhea.descender                            | OS/2.sTypoDescender                      | -180                       |
 | hhea.lineGap                              | 0                                        | 0                          |
 | OS/2.usWinAscent                          | Font bbox yMax                           | 1066                       |
 | OS/2.usWinDescent                         | Font bbox yMin                           | 273                        |

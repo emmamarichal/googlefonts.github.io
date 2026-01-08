@@ -36,8 +36,8 @@ Bear in mind:
 
 - No conflict during installation (in user fonts folder: `user/Library/Fonts`).
 - Fonts appear in Font Book.
-- Fonts looks good in Font Book.
-- Family names and style manes are displayed correctly.
+- Fonts look good in Font Book.
+- Family names and style names are displayed correctly.
 
 ### Usage in external office apps
 
@@ -93,7 +93,7 @@ Double-click on each style and check if:
 
 - Outline type is correct (PS for .otf, TT for .ttf).
 - Font is displayed correctly (small size in waterfall).
-  -  This is actually a good way to quickly check out your hinting.
+-  This is actually a good way to quickly check out your hinting.
 
 ### Usage in Office apps
 
@@ -116,9 +116,9 @@ Double-click on each style and check if:
 
 ### All web formats
 
-- Fonts are display correctly.
+- Fonts are displayed correctly.
 - Fonts have kerning.
-- Line-spacing looks okay (not too lose, not too tight).
+- Linespacing looks okay (not too loose, not too tight).
 - No clipping.
 
 ### Variable Fonts
